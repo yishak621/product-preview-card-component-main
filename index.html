@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product preview card</title>
+    <!--styles-->
+    <link rel="stylesheet" href="style.css" />
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@100;200;300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--google fonts-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="center">
+      <main>
+        <div class="container">
+          <div class="image">
+            <picture>
+              <source
+                srcset="images/product@1x.jpg 750w, images/product@2x.jpg 1200w"
+              />
+              <!--!important for screens <750px and <1200px--->
+              <img src="images/product@2x.jpg" />
+            </picture>
+          </div>
+          <!--content of card-->
+          <div class="text-content">
+            <h2 class="perfume">Perfume</h2>
+            <h1 class="head">Gabrielle Essence Eau De Parfum</h1>
+            <p>
+              A floral , solar and voluptuos interpretaion composed by Oliver
+              Polge, Perfumer-Creator for the House of CHANEL.
+            </p>
+            <div class="tag">
+              <div class="new__price"><h1>$149.99</h1></div>
+              <div class="old__price">
+                <h2 class="old__price__tag">$169.99</h2>
+              </div>
+            </div>
+            <div class="flex">
+              <button class="btn">
+                <i class="fas fa-shopping-cart"></i>
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
